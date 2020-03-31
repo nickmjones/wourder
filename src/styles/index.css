@@ -1,9 +1,10 @@
 
 :root {
-  --color-blue:       #252A43;
-  --color-blue-dark:  #20243C;
-  --color-violet:     #8C9CC2;
-  --color-teal:       #00D5E3;
+  --color-blue:    #0D1942;
+  --color-indigo:  #1D2B5E;
+  --color-violet:  #813BED;
+  --color-teal:    #00D5E3;
+  --color-sky:     #5F93FA;
 
   --base-padding: 1rem;
 }
@@ -16,6 +17,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: rgba(255, 255, 255, 0.9);
+  background-color: var(--color-blue);
 }
 
 html {
@@ -35,7 +37,16 @@ h1, h2, h3, h4, h5 {
   margin: 0;
 }
 
+h1 {
+  font-size: 34px;
+}
+
+h5 {
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
 .viewport {
   height: calc(100vh - 4rem);
-  background-color: var(--color-blue);
+  padding-bottom: 34px;
 }

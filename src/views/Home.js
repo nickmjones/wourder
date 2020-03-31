@@ -1,5 +1,5 @@
 import { useOktaAuth } from '@okta/okta-react';
-import React, { useState, useEffect, Component } from 'react';
+import React from 'react';
 
 
 const Home = () => { 

@@ -1,11 +1,11 @@
 import React from 'react'
-import { GridWrapper, GridElement } from '../components/Grid'
+import { GridWrapper, GridElement } from '../components/frontend/Grid'
 import TitleBar from '../components/frontend/TitleBar'
 
 const Leaderboard = () => {
   return(
     <>
-    <TitleBar title="Leaderboard"/>
+    <TitleBar title="Leaderboard" date="true" />
     <GridWrapper>
       <GridElement col_full>
         Content.

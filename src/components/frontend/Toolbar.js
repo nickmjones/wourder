@@ -1,21 +1,20 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import { FiHome } from 'react-icons/fi';
-import { FiPlusCircle } from 'react-icons/fi';
-import { FiShield } from 'react-icons/fi';
+import { FiSun } from 'react-icons/fi';
+import { FiXSquare } from 'react-icons/fi';
+import { FiAward } from 'react-icons/fi';
 
 // Styles
 const ToolbarWrapper = styled.div `
-  background: var(--color-violet);
   display: flex;
-  height: 4rem;
+  height: 49px;
+  border-radius: 20px;
 `;
 
 const ToolbarElement = styled.div `
-  padding: 1rem;
   flex: 1;
   text-align: center;
-  line-height: 2.2rem;
+  line-height: 49px;
 
   & a {
     color: var(--color-blue-dark); 
@@ -40,17 +39,17 @@ class Toolbar extends Component {
         <ToolbarWrapper>
           <ToolbarElement>
             <a href="/today">
-              <FiHome />
+              <FiSun />
             </a>
           </ToolbarElement>
           <ToolbarElement>
             <a href="/logging">
-              <FiPlusCircle />
+              <FiXSquare />
             </a>
           </ToolbarElement>
           <ToolbarElement>
             <a href="/leaderboard">
-              <FiShield />
+              <FiAward />
             </a>
           </ToolbarElement>
         </ToolbarWrapper>

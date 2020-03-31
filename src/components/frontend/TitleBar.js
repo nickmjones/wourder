@@ -1,18 +1,40 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
+import moment from 'moment'
 
 
-const TitleBarElement = styled.header `
-  padding: 3rem 1rem 1rem;
+const TitleBarCanvas = styled.header `
+  height: 96px;
+  padding: 1rem;
+  background: var(--color-violet);
+  display: grid;
+  grid-template-rows: auto;
+  color: white;
 `;
 
-class TitleBar extends Component {
+const TitleBarDate = styled.div`
+  font-size: 15px;
+  color: rgba(255,255,255,0.4);
+`;
+const TitleBarTitle = styled.div`
+  font-size: 28px;
+  font-weight: 700;
+`;
 
+
+class TitleBar extends Component {
+  getDate() {
+    var current_date = moment().format("MMMM Do")
+    return current_date
+  }
   render(){
     return (
-      <TitleBarElement>
-        <h1>{this.props.title}</h1>
-      </TitleBarElement>
+      <TitleBarCanvas>
+        {this.props.date === "true" ? (
+          <TitleBarDate>{ this.getDate() }</TitleBarDate>
+        ) : null}
+        <TitleBarTitle>{this.props.title}</TitleBarTitle>
+      </TitleBarCanvas>
     )
   }
 }
