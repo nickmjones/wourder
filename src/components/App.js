@@ -1,11 +1,10 @@
 import React from 'react';
-import ApplicationLayout from '../views/ApplicationLayout'
-
+import Routes from '../components/Routes'
 
 function App() {
   return (
     <div>
-      <ApplicationLayout />
+      <Routes />
     </div>
   );
 }

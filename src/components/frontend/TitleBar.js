@@ -15,6 +15,7 @@ const TitleBarCanvas = styled.header `
 const TitleBarDate = styled.div`
   font-size: 15px;
   color: rgba(255,255,255,0.4);
+  text-transform: uppercase;
 `;
 const TitleBarTitle = styled.div`
   font-size: 28px;
@@ -24,7 +25,7 @@ const TitleBarTitle = styled.div`
 
 class TitleBar extends Component {
   getDate() {
-    var current_date = moment().format("MMMM Do")
+    var current_date = moment().format("dddd, MMMM D")
     return current_date
   }
   render(){

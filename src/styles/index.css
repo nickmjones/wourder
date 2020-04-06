@@ -7,6 +7,7 @@
   --color-sky:     #5F93FA;
 
   --base-padding: 1rem;
+  --toolbar-element-height: 49px;
 }
 
 body {
@@ -47,6 +48,5 @@ h5 {
 }
 
 .viewport {
-  height: calc(100vh - 4rem);
-  padding-bottom: 34px;
+  height: calc(100vh - var(--toolbar-element-height));
 }
